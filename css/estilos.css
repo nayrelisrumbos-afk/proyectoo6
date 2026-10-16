@@ -1,0 +1,102 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #470369ed;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-principal {
+    width: 320px;
+}
+
+
+.fecha {
+    display: flex;
+    border: 2px solid #2c3e50;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.fecha input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.fecha button {
+    border: none;
+    background-color: white;
+    border-left: 2px solid #2c3e50;
+    padding: 8px 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.calendario {
+    background-color: white;
+    border: 2px solid #2c3e50;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+
+.encabezado-calendario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.encabezado-calendario p {
+    margin: 0;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.encabezado-calendario button {
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #4c2967;
+}
+
+
+.tabla-calendario {
+    width: 100%;
+    text-align: center;
+}
+
+.tabla-calendario th {
+    color: #80208d;
+    font-size: 13px;
+    padding: 8px 0;
+    border-bottom: 2px solid #2c3e50;
+}
+
+.tabla-calendario td {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #320875;
+    cursor: pointer;
+}
+
+.tabla-calendario td:hover {
+    background-color: #ecf0f1;
+    border-radius: 50%;
+}
+
+
+@media (max-width: 400px) {
+    .contenedor-principal {
+        width: 100%;
+    }
+}
